@@ -1,0 +1,57 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+		
+		main.page-container
+			include blocks/navigation-arrow.pug
+			section.main-slider 
+				.main-slider__text 
+					h1.main-title Мы мастера WEB-а
+					p.text Мы знаем, что делаем и делаем то, что знаем.<br> Мы нацелены на результат, а не на “сдачу”прокта.
+					a.btn(href="#") Написать нам
+				.background-slider 
+					img(src=img+"texture.svg", alt="")
+			section.doing-reviews
+				.doing 
+					img(src=img+"shutterstock_2058293555.png", alt="")
+					.doing__text 
+						h2.dop-title Делаем свою работу хорошо*
+						p.text *по мнение 8 из 10 наших клиентов
+				.reviews
+					.reviews__header 
+						h2.dop-title Отзывы
+						a(href="#") Все отзывы <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12.5H19" stroke="#A755ED" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 19.5L19 12.5L12 5.5" stroke="#A755ED" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					.reviews__body
+						.reviews__body-item 
+							img(src=img+"unsplash_qfp4-Ud6Fyg.png", alt="")
+							.reviews__text 
+								.reviews__date 26 янв 2018
+								.reviews__name Иннокентий Длиннофамильный
+								.reviews__subname Соучередитель OOO «ПКФ МЕТИНВЕСТ-СЕРВИС»
+								.reviews__implemented Реализовано:
+								ul 
+									li Разработка сайта
+									li SEO
+									li Техподдержка
+								a(href="#") Подробнее
+						.reviews__body-item 
+							img(src=img+"unsplash_qfp4-Ud6Fyg (1).png", alt="")
+							.reviews__text 
+								.reviews__date 26 янв 2018
+								.reviews__name Иннокентий Длиннофамильный
+								.reviews__subname Соучередитель OOO «ПКФ МЕТИНВЕСТ-СЕРВИС»
+								.reviews__implemented Реализовано:
+								ul 
+									li Разработка сайта
+									li SEO
+									li Техподдержка
+								a(href="#") Подробнее
+
+
+		include blocks/footer.pug
+		include blocks/scripts.pug

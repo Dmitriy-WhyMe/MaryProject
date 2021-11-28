@@ -1,0 +1,171 @@
+// main page elements
+body
+	font-size: 14px
+	// color: $dark
+	font-family: 'ALS Schlange sans'
+	font-style: normal
+	font-weight: normal
+	background: white
+	overflow-x: hidden
+	// +scrollbar(10px, auto, $yellow, $gray2, $dark, null)
+
+.page-container
+	max-width: 1440px
+	width: 100%
+	margin: 0 auto
+	overflow: hidden
+
+.container
+	position: relative
+	max-width: 1270px
+	width: 100%
+	padding: 0
+	margin: 0 auto
+	+mq($max-width: 1200px)
+		padding: 0 15px
+		max-width: 100%
+	+mq($max-width: 575px)
+		padding: 0 10px
+div
+	z-index: 1
+
+.hidden
+	display: none
+
+.main-title
+	color: $text
+	font-weight: bold
+	font-size: 64px
+	line-height: 110%
+.dop-title
+	font-weight: bold
+	font-size: 48px
+	line-height: 110%
+	color: $text
+.text
+	color: $dark-grey
+	font-size: 18px
+	line-height: 150%
+.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #FFFFFF
+	font-weight: bold
+	font-size: 18px
+	line-height: 150%
+	background: #A755ED
+	box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.2), inset -5px -5px 5px rgba(0, 0, 0, 0.1)
+	border-radius: 16px
+	width: 180px
+	height: 56px
+//start main-slider 
+.main-slider 
+	position: relative
+	height: 710px
+	.main-slider__text 
+		z-index: 2
+		padding-top: 143px
+		margin-left: 285px
+		z-index: 2
+		max-width: 470px
+		h1
+			margin-bottom: 30px
+		p
+			margin-bottom: 30px
+		a
+	.background-slider 
+		z-index: -1
+		position: absolute
+		top: 0
+		right: 0
+		background: linear-gradient(226.79deg, #C1D5D9 0%, #EFE8DB 100%)
+		border-radius: 24px 0px 0px 24px
+		width: 855px
+		height: 710px
+//end main-slider 
+//start doing-reviews
+.doing 
+	display: flex
+	margin-left: 385px
+	gap: 100px
+	margin-top: 150px
+	img
+		max-width: 300px
+		width: 100%
+		height: 277px
+	.doing__text 
+		max-width: 470px
+		z-index: 1
+		h2
+			margin-bottom: 32px
+.reviews
+	margin-left: 85px
+	margin-top: 140px
+	margin-bottom: 140px
+	.reviews__body
+		display: flex
+		gap: 30px
+		.reviews__body-item 
+			background: #FFFFFF
+			box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.15)
+			border-radius: 15px
+			height: 360px
+			padding: 20px
+			display: flex
+			z-index: 1
+			.reviews__text 
+				padding-left: 24px
+				.reviews__date
+					margin-bottom: 24px
+					color: $gray
+					font-size: 14px
+					line-height: 150%
+				.reviews__name
+					font-weight: bold
+					color: $text
+					font-size: 20px
+					line-height: 110%
+					margin-bottom: 5px
+				.reviews__subname
+					font-size: 16px
+					line-height: 150%
+					color: $gray
+					margin-bottom: 24px
+				.reviews__implemented
+					font-weight: bold
+					font-size: 20px
+					line-height: 110%
+					color: $text
+					margin-bottom: 10px
+				ul
+					margin-bottom: 24px
+					padding-left: 24px
+					li
+						font-size: 16px
+						line-height: 150%
+						color: $gray
+						list-style-type: disc
+				a
+					font-size: 18px
+					line-height: 150%
+					color: $gray
+					border-bottom: 1px dashed
+	.reviews__header 
+		display: flex
+		align-items: center
+		margin-bottom: 30px
+		h2
+			margin-right: 50px
+		a
+			z-index: 1
+			display: flex
+			font-weight: bold
+			font-size: 18px
+			line-height: 150%
+			align-items: center
+			color: $primary
+			svg
+				margin-left: 10px
+//end doing-reviews 
+
