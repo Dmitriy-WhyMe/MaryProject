@@ -18,5 +18,17 @@
 			else
 				$(this).removeClass('has_value');
 		});
+
+		$('.nav-arrow').click(function(){
+			if ($('.navigation-arrow__menu').hasClass('clicked-menu')) {
+				$(".navigation-arrow__menu").removeClass('clicked-menu');
+				$(".hidden-menu").css({ display: "none" });
+			} else {
+				$(".hidden-menu").addClass('active-menu');
+				$(".hidden-menu").css({ display: "block" });
+				$(".navigation-arrow__menu").addClass('clicked-menu');
+			}
+		});
+		
 	});
 })(jQuery);

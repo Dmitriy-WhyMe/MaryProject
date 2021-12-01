@@ -1,6 +1,13 @@
+.home-arrow
+    position: absolute
+    left: 16.7rem
+    top: 13rem
+@include max-screen(1440px)
+    .home-arrow
+        left: 3.42rem
 .navigation-arrow
     position: absolute
-    z-index: 0
+    z-index: 1
     margin-left: 55px
     margin-top: 206px
     filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.05))
@@ -11,11 +18,21 @@
         display: flex
         flex-direction: column
         gap: 44px
-        left: 54px
+        left: 44px
+        align-items: center
         a
-            svg
-                max-width: 20px
-                max-height: 20px
+            max-width: 20px
+            max-height: 20px
+            .navigation-arrow__menu-txt
+                display: none  
+        .nav-arrow
+            background: #FFFFFF
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 15px
+            min-width: 40px
+            min-height: 40px
     .navigation-arrow__menu-text
         transform: rotate(-90deg)
         font-weight: bold
@@ -25,3 +42,15 @@
         position: absolute
         top: 62px
         left: -30px
+.hidden-menu
+    display: none
+.active-menu
+    left: -55px
+    top: -206px
+    z-index: 2
+    position: absolute
+    height: 710px
+    background: linear-gradient(270deg, #FFEE93 0%, #FFEE95 100%), #FFE768
+    box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.05), inset 0px 10px 10px rgba(255, 255, 255, 0.2), inset -10px 10px 10px rgba(255, 255, 255, 0.2), inset 0px -10px 10px rgba(0, 0, 0, 0.1)
+    border-radius: 0px 35px 35px 0px
+    width: 295px
