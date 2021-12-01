@@ -7,14 +7,15 @@ html
 	body
 		include blocks/header.pug
 		main.page-container
-			include blocks/navigation-site.pug
+			include blocks/navigation-home.pug
+			include blocks/arrow-site.pug
 			section.main-screen__one
 				.container
 					img(src=img+"shutterstock_1988721584 1 копия 2.png", alt="")
 					.main-screen__text 
 						h1.main-title Разработка сайтов для бизнеса
 						p.text Сайт - это часть экосистемы бизнеса.<br> Выявляем задачи и потребности бизнеса<br>Разрабатываем сайты с учетом специфифики клиента<br> Анализируем отрасль
-						a.btn(href="#") Написать нам
+						a.btn(href="#text-popup" class="popup-content") Написать нам
 			section.main-screen__two 
 				.container
 					.main-screen__two-text 
@@ -34,28 +35,15 @@ html
 							p.text Интернет-магазин по продаже пирогов
 							.already-done__block 
 								.already-done__block-item
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M2.5 9.5H21.5V20C21.5 20.2652 21.3946 20.5196 21.2071 20.7071C21.0196 20.8946 20.7652 21 20.5 21H3.5C3.23478 21 2.98043 20.8946 2.79289 20.7071C2.60536 20.5196 2.5 20.2652 2.5 20V9.5Z" stroke="#37474F" stroke-linejoin="round"/>
-										<path d="M2.5 4.5C2.5 4.23478 2.60536 3.98043 2.79289 3.79289C2.98043 3.60536 3.23478 3.5 3.5 3.5H20.5C20.7652 3.5 21.0196 3.60536 21.2071 3.79289C21.3946 3.98043 21.5 4.23478 21.5 4.5V9.5H2.5V4.5Z" stroke="#37474F" stroke-linejoin="round"/>
-										<path d="M8 2V6" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M16 2V6" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M14 17H17" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M7 17H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M14 13H17" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M7 13H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
+									<svg width="24" height="24"><use xlink:href="#date"></use></svg>
 									.already-done__block-text 
 										p Сроки
 										p.bold 8 месяцев
 								.already-done__block-item
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 1V23" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M17.5 3H10C8.80653 3 7.66193 3.47411 6.81802 4.31802C5.97411 5.16193 5.5 6.30653 5.5 7.5C5.5 8.69347 5.97411 9.83807 6.81802 10.682C7.66193 11.5259 8.80653 12 10 12" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.5 21H14C14.5909 21 15.1761 20.8836 15.7221 20.6575C16.268 20.4313 16.7641 20.0998 17.182 19.682C17.5998 19.2641 17.9313 18.768 18.1575 18.2221C18.3836 17.6761 18.5 17.0909 18.5 16.5C18.5 15.9091 18.3836 15.3239 18.1575 14.7779C17.9313 14.232 17.5998 13.7359 17.182 13.318C16.7641 12.9002 16.268 12.5687 15.7221 12.3425C15.1761 12.1164 14.5909 12 14 12H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
+									<svg width="24" height="24"><use xlink:href="#money"></use></svg>
 									.already-done__block-text 
 										p Стоимость
-										p 210 000 RUB
+										p.bold 210 000 RUB
 							h5 Реализовано:
 							ul 
 								li Разработка сайта
@@ -70,28 +58,15 @@ html
 							p.text Интернет-магазин по продаже пирогов
 							.already-done__block 
 								.already-done__block-item
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M2.5 9.5H21.5V20C21.5 20.2652 21.3946 20.5196 21.2071 20.7071C21.0196 20.8946 20.7652 21 20.5 21H3.5C3.23478 21 2.98043 20.8946 2.79289 20.7071C2.60536 20.5196 2.5 20.2652 2.5 20V9.5Z" stroke="#37474F" stroke-linejoin="round"/>
-										<path d="M2.5 4.5C2.5 4.23478 2.60536 3.98043 2.79289 3.79289C2.98043 3.60536 3.23478 3.5 3.5 3.5H20.5C20.7652 3.5 21.0196 3.60536 21.2071 3.79289C21.3946 3.98043 21.5 4.23478 21.5 4.5V9.5H2.5V4.5Z" stroke="#37474F" stroke-linejoin="round"/>
-										<path d="M8 2V6" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M16 2V6" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M14 17H17" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M7 17H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M14 13H17" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M7 13H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
+									<svg width="24" height="24"><use xlink:href="#date"></use></svg>
 									.already-done__block-text 
 										p Сроки
-										p 8 месяцев
+										p.bold 8 месяцев
 								.already-done__block-item
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 1V23" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M17.5 3H10C8.80653 3 7.66193 3.47411 6.81802 4.31802C5.97411 5.16193 5.5 6.30653 5.5 7.5C5.5 8.69347 5.97411 9.83807 6.81802 10.682C7.66193 11.5259 8.80653 12 10 12" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.5 21H14C14.5909 21 15.1761 20.8836 15.7221 20.6575C16.268 20.4313 16.7641 20.0998 17.182 19.682C17.5998 19.2641 17.9313 18.768 18.1575 18.2221C18.3836 17.6761 18.5 17.0909 18.5 16.5C18.5 15.9091 18.3836 15.3239 18.1575 14.7779C17.9313 14.232 17.5998 13.7359 17.182 13.318C16.7641 12.9002 16.268 12.5687 15.7221 12.3425C15.1761 12.1164 14.5909 12 14 12H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
+									<svg width="24" height="24"><use xlink:href="#money"></use></svg>
 									.already-done__block-text 
 										p Стоимость
-										p 210 000 RUB
+										p.bold 210 000 RUB
 							h5 Реализовано:
 							ul 
 								li Разработка сайта
@@ -106,28 +81,15 @@ html
 							p.text Интернет-магазин по продаже пирогов
 							.already-done__block 
 								.already-done__block-item
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M2.5 9.5H21.5V20C21.5 20.2652 21.3946 20.5196 21.2071 20.7071C21.0196 20.8946 20.7652 21 20.5 21H3.5C3.23478 21 2.98043 20.8946 2.79289 20.7071C2.60536 20.5196 2.5 20.2652 2.5 20V9.5Z" stroke="#37474F" stroke-linejoin="round"/>
-										<path d="M2.5 4.5C2.5 4.23478 2.60536 3.98043 2.79289 3.79289C2.98043 3.60536 3.23478 3.5 3.5 3.5H20.5C20.7652 3.5 21.0196 3.60536 21.2071 3.79289C21.3946 3.98043 21.5 4.23478 21.5 4.5V9.5H2.5V4.5Z" stroke="#37474F" stroke-linejoin="round"/>
-										<path d="M8 2V6" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M16 2V6" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M14 17H17" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M7 17H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M14 13H17" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M7 13H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
+									<svg width="24" height="24"><use xlink:href="#date"></use></svg>
 									.already-done__block-text 
 										p Сроки
-										p 8 месяцев
+										p.bold 8 месяцев
 								.already-done__block-item
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 1V23" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M17.5 3H10C8.80653 3 7.66193 3.47411 6.81802 4.31802C5.97411 5.16193 5.5 6.30653 5.5 7.5C5.5 8.69347 5.97411 9.83807 6.81802 10.682C7.66193 11.5259 8.80653 12 10 12" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.5 21H14C14.5909 21 15.1761 20.8836 15.7221 20.6575C16.268 20.4313 16.7641 20.0998 17.182 19.682C17.5998 19.2641 17.9313 18.768 18.1575 18.2221C18.3836 17.6761 18.5 17.0909 18.5 16.5C18.5 15.9091 18.3836 15.3239 18.1575 14.7779C17.9313 14.232 17.5998 13.7359 17.182 13.318C16.7641 12.9002 16.268 12.5687 15.7221 12.3425C15.1761 12.1164 14.5909 12 14 12H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
+									<svg width="24" height="24"><use xlink:href="#money"></use></svg>
 									.already-done__block-text 
 										p Стоимость
-										p 210 000 RUB
+										p.bold 210 000 RUB
 							h5 Реализовано:
 							ul 
 								li Разработка сайта
@@ -142,28 +104,15 @@ html
 							p.text Интернет-магазин по продаже пирогов
 							.already-done__block 
 								.already-done__block-item
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M2.5 9.5H21.5V20C21.5 20.2652 21.3946 20.5196 21.2071 20.7071C21.0196 20.8946 20.7652 21 20.5 21H3.5C3.23478 21 2.98043 20.8946 2.79289 20.7071C2.60536 20.5196 2.5 20.2652 2.5 20V9.5Z" stroke="#37474F" stroke-linejoin="round"/>
-										<path d="M2.5 4.5C2.5 4.23478 2.60536 3.98043 2.79289 3.79289C2.98043 3.60536 3.23478 3.5 3.5 3.5H20.5C20.7652 3.5 21.0196 3.60536 21.2071 3.79289C21.3946 3.98043 21.5 4.23478 21.5 4.5V9.5H2.5V4.5Z" stroke="#37474F" stroke-linejoin="round"/>
-										<path d="M8 2V6" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M16 2V6" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M14 17H17" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M7 17H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M14 13H17" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M7 13H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
+									<svg width="24" height="24"><use xlink:href="#date"></use></svg>
 									.already-done__block-text 
 										p Сроки
-										p 8 месяцев
+										p.bold 8 месяцев
 								.already-done__block-item
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 1V23" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M17.5 3H10C8.80653 3 7.66193 3.47411 6.81802 4.31802C5.97411 5.16193 5.5 6.30653 5.5 7.5C5.5 8.69347 5.97411 9.83807 6.81802 10.682C7.66193 11.5259 8.80653 12 10 12" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.5 21H14C14.5909 21 15.1761 20.8836 15.7221 20.6575C16.268 20.4313 16.7641 20.0998 17.182 19.682C17.5998 19.2641 17.9313 18.768 18.1575 18.2221C18.3836 17.6761 18.5 17.0909 18.5 16.5C18.5 15.9091 18.3836 15.3239 18.1575 14.7779C17.9313 14.232 17.5998 13.7359 17.182 13.318C16.7641 12.9002 16.268 12.5687 15.7221 12.3425C15.1761 12.1164 14.5909 12 14 12H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
+									<svg width="24" height="24"><use xlink:href="#money"></use></svg>
 									.already-done__block-text 
 										p Стоимость
-										p 210 000 RUB
+										p.bold 210 000 RUB
 							h5 Реализовано:
 							ul 
 								li Разработка сайта
@@ -178,28 +127,15 @@ html
 							p.text Интернет-магазин по продаже пирогов
 							.already-done__block 
 								.already-done__block-item
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M2.5 9.5H21.5V20C21.5 20.2652 21.3946 20.5196 21.2071 20.7071C21.0196 20.8946 20.7652 21 20.5 21H3.5C3.23478 21 2.98043 20.8946 2.79289 20.7071C2.60536 20.5196 2.5 20.2652 2.5 20V9.5Z" stroke="#37474F" stroke-linejoin="round"/>
-										<path d="M2.5 4.5C2.5 4.23478 2.60536 3.98043 2.79289 3.79289C2.98043 3.60536 3.23478 3.5 3.5 3.5H20.5C20.7652 3.5 21.0196 3.60536 21.2071 3.79289C21.3946 3.98043 21.5 4.23478 21.5 4.5V9.5H2.5V4.5Z" stroke="#37474F" stroke-linejoin="round"/>
-										<path d="M8 2V6" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M16 2V6" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M14 17H17" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M7 17H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M14 13H17" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M7 13H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
+									<svg width="24" height="24"><use xlink:href="#date"></use></svg>
 									.already-done__block-text 
 										p Сроки
-										p 8 месяцев
+										p.bold 8 месяцев
 								.already-done__block-item
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 1V23" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M17.5 3H10C8.80653 3 7.66193 3.47411 6.81802 4.31802C5.97411 5.16193 5.5 6.30653 5.5 7.5C5.5 8.69347 5.97411 9.83807 6.81802 10.682C7.66193 11.5259 8.80653 12 10 12" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.5 21H14C14.5909 21 15.1761 20.8836 15.7221 20.6575C16.268 20.4313 16.7641 20.0998 17.182 19.682C17.5998 19.2641 17.9313 18.768 18.1575 18.2221C18.3836 17.6761 18.5 17.0909 18.5 16.5C18.5 15.9091 18.3836 15.3239 18.1575 14.7779C17.9313 14.232 17.5998 13.7359 17.182 13.318C16.7641 12.9002 16.268 12.5687 15.7221 12.3425C15.1761 12.1164 14.5909 12 14 12H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
+									<svg width="24" height="24"><use xlink:href="#money"></use></svg>
 									.already-done__block-text 
 										p Стоимость
-										p 210 000 RUB
+										p.bold 210 000 RUB
 							h5 Реализовано:
 							ul 
 								li Разработка сайта
@@ -211,10 +147,9 @@ html
 					img(src=img+"texture_1.svg", alt="")
 				.container 
 					h2.dop-title Как мы работаем?
-					.we-work__columns
-						.we-work__work__columns-item(class="column-one")
-							.columns-item__block
-								<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+					.flex-we(class="flex-we__one")
+						.box-wrapper(class="box-wrapper--circle-right")
+							.box(class="box--left") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M28.5 3H7.5C6.67157 3 6 3.67157 6 4.5V31.5C6 32.3284 6.67157 33 7.5 33H28.5C29.3284 33 30 32.3284 30 31.5V4.5C30 3.67157 29.3284 3 28.5 3Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
 								<path d="M15.75 10.5H24.75" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M15.75 18H24.75" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -222,51 +157,14 @@ html
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 12C11.6478 12 12.0294 11.842 12.3107 11.5607C12.592 11.2794 12.75 10.8978 12.75 10.5C12.75 10.1022 12.592 9.72064 12.3107 9.43934C12.0294 9.15804 11.6478 9 11.25 9C10.8522 9 10.4706 9.15804 10.1893 9.43934C9.90804 9.72064 9.75 10.1022 9.75 10.5C9.75 10.8978 9.90804 11.2794 10.1893 11.5607C10.4706 11.842 10.8522 12 11.25 12Z" fill="#CC9BF3"/>
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 19.5C11.6478 19.5 12.0294 19.342 12.3107 19.0607C12.592 18.7794 12.75 18.3978 12.75 18C12.75 17.6022 12.592 17.2206 12.3107 16.9393C12.0294 16.658 11.6478 16.5 11.25 16.5C10.8522 16.5 10.4706 16.658 10.1893 16.9393C9.90804 17.2206 9.75 17.6022 9.75 18C9.75 18.3978 9.90804 18.7794 10.1893 19.0607C10.4706 19.342 10.8522 19.5 11.25 19.5Z" fill="#CC9BF3"/>
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 27C11.6478 27 12.0294 26.842 12.3107 26.5607C12.592 26.2794 12.75 25.8978 12.75 25.5C12.75 25.1022 12.592 24.7206 12.3107 24.4393C12.0294 24.158 11.6478 24 11.25 24C10.8522 24 10.4706 24.158 10.1893 24.4393C9.90804 24.7206 9.75 25.1022 9.75 25.5C9.75 25.8978 9.90804 26.2794 10.1893 26.5607C10.4706 26.842 10.8522 27 11.25 27Z" fill="#CC9BF3"/>
-								</svg>
-								.columns-item__block-text Бриф: выявление потребностей и возможностей
-							.columns-item__block
-								<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M27.5145 11.3782C28.4709 12.7483 29.1181 14.3098 29.4113 15.9548H33V20.0452H29.4113C29.1181 21.6902 28.4709 23.2517 27.5145 24.6217L30.0532 27.1605L27.1605 30.0532L24.6217 27.5145C23.2517 28.4709 21.6902 29.1181 20.0452 29.4113V33H15.9548V29.4113C14.3098 29.1181 12.7483 28.4709 11.3782 27.5145L8.8395 30.0532L5.94675 27.1605L8.4855 24.6217C7.52905 23.2517 6.88186 21.6902 6.58875 20.0452H3V15.9548H6.58875C6.88186 14.3098 7.52905 12.7483 8.4855 11.3782L5.94675 8.8395L8.8395 5.94675L11.3782 8.4855C12.7483 7.52905 14.3098 6.88186 15.9548 6.58875V3H20.0452V6.58875C21.6902 6.88186 23.2517 7.52905 24.6217 8.4855L27.1605 5.94675L30.0532 8.8395L27.5145 11.3782V11.3782Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
-								<path d="M18 21.75C18.9946 21.75 19.9484 21.3549 20.6517 20.6517C21.3549 19.9484 21.75 18.9946 21.75 18C21.75 17.0054 21.3549 16.0516 20.6517 15.3483C19.9484 14.6451 18.9946 14.25 18 14.25C17.0054 14.25 16.0516 14.6451 15.3483 15.3483C14.6451 16.0516 14.25 17.0054 14.25 18C14.25 18.9946 14.6451 19.9484 15.3483 20.6517C16.0516 21.3549 17.0054 21.75 18 21.75Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
-								</svg>
-								.columns-item__block-text Интеграция с CMS: modX, laravel
-							.columns-item__block
-								<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M3.75 18H32.25" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M21 3H15C14.6022 3 14.2206 3.15804 13.9393 3.43934C13.658 3.72064 13.5 4.10218 13.5 4.5V10.5C13.5 10.8978 13.658 11.2794 13.9393 11.5607C14.2206 11.842 14.6022 12 15 12H21C21.3978 12 21.7794 11.842 22.0607 11.5607C22.342 11.2794 22.5 10.8978 22.5 10.5V4.5C22.5 4.10218 22.342 3.72064 22.0607 3.43934C21.7794 3.15804 21.3978 3 21 3V3Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
-								<path d="M12 24H6C5.60218 24 5.22064 24.158 4.93934 24.4393C4.65804 24.7206 4.5 25.1022 4.5 25.5V31.5C4.5 31.8978 4.65804 32.2794 4.93934 32.5607C5.22064 32.842 5.60218 33 6 33H12C12.3978 33 12.7794 32.842 13.0607 32.5607C13.342 32.2794 13.5 31.8978 13.5 31.5V25.5C13.5 25.1022 13.342 24.7206 13.0607 24.4393C12.7794 24.158 12.3978 24 12 24V24Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
-								<path d="M30 24H24C23.6022 24 23.2206 24.158 22.9393 24.4393C22.658 24.7206 22.5 25.1022 22.5 25.5V31.5C22.5 31.8978 22.658 32.2794 22.9393 32.5607C23.2206 32.842 23.6022 33 24 33H30C30.3978 33 30.7794 32.842 31.0607 32.5607C31.342 32.2794 31.5 31.8978 31.5 31.5V25.5C31.5 25.1022 31.342 24.7206 31.0607 24.4393C30.7794 24.158 30.3978 24 30 24Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
-								<path d="M18 18V12" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M27 24V18" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M9 24V18" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-								.columns-item__block-text Построение структуры сайта
-						.we-work__work__columns-item(class="column-two")
-							.columns-item__block
-								<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+								</svg>Бриф: выявление потребностей и возможностей
+						.box-wrapper
+							.box(class="box--center") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M15.75 28.5C22.7917 28.5 28.5 22.7917 28.5 15.75C28.5 8.70825 22.7917 3 15.75 3C8.70825 3 3 8.70825 3 15.75C3 22.7917 8.70825 28.5 15.75 28.5Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
 								<path d="M24.9165 24.9165L31.2803 31.2803" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-								.columns-item__block-text Анализ конкурентов
-							.columns-item__block
-								<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 9.75L3 19.074L12 27.75" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M24 9.75L33 19.074L24 27.75" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M21 3L15.75 33" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round"/>
-								</svg>
-								.columns-item__block-text Верстка макетов
-							.columns-item__block
-								<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M31.5 13.5V30C31.5 30.3978 31.342 30.7794 31.0607 31.0607C30.7794 31.342 30.3978 31.5 30 31.5H6C5.60218 31.5 5.22064 31.342 4.93934 31.0607C4.65804 30.7794 4.5 30.3978 4.5 30V13.5" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M4.5 6C4.5 5.60218 4.65804 5.22064 4.93934 4.93934C5.22064 4.65804 5.60218 4.5 6 4.5H30C30.3978 4.5 30.7794 4.65804 31.0607 4.93934C31.342 5.22064 31.5 5.60218 31.5 6V13.5H4.5V6Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M9 10.5C9.39782 10.5 9.77936 10.342 10.0607 10.0607C10.342 9.77936 10.5 9.39782 10.5 9C10.5 8.60218 10.342 8.22064 10.0607 7.93934C9.77936 7.65804 9.39782 7.5 9 7.5C8.60218 7.5 8.22064 7.65804 7.93934 7.93934C7.65804 8.22064 7.5 8.60218 7.5 9C7.5 9.39782 7.65804 9.77936 7.93934 10.0607C8.22064 10.342 8.60218 10.5 9 10.5Z" fill="#CC9BF3"/>
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 10.5C13.8978 10.5 14.2794 10.342 14.5607 10.0607C14.842 9.77936 15 9.39782 15 9C15 8.60218 14.842 8.22064 14.5607 7.93934C14.2794 7.65804 13.8978 7.5 13.5 7.5C13.1022 7.5 12.7206 7.65804 12.4393 7.93934C12.158 8.22064 12 8.60218 12 9C12 9.39782 12.158 9.77936 12.4393 10.0607C12.7206 10.342 13.1022 10.5 13.5 10.5Z" fill="#CC9BF3"/>
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M18 10.5C18.3978 10.5 18.7794 10.342 19.0607 10.0607C19.342 9.77936 19.5 9.39782 19.5 9C19.5 8.60218 19.342 8.22064 19.0607 7.93934C18.7794 7.65804 18.3978 7.5 18 7.5C17.6022 7.5 17.2206 7.65804 16.9393 7.93934C16.658 8.22064 16.5 8.60218 16.5 9C16.5 9.39782 16.658 9.77936 16.9393 10.0607C17.2206 10.342 17.6022 10.5 18 10.5Z" fill="#CC9BF3"/>
-								</svg>
-								.columns-item__block-text Синхронизации с системами учета/доставки*
-						.we-work__work__columns-item(class="column-three")
-							.columns-item__block
-								<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+								</svg>Анализ конкурентов
+						.box-wrapper(class="box-wrapper--circle-left")
+							.box(class="box--right") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M6 9C6.79565 9 7.55871 8.68393 8.12132 8.12132C8.68393 7.55871 9 6.79565 9 6C9 5.20435 8.68393 4.44129 8.12132 3.87868C7.55871 3.31607 6.79565 3 6 3C5.20435 3 4.44129 3.31607 3.87868 3.87868C3.31607 4.44129 3 5.20435 3 6C3 6.79565 3.31607 7.55871 3.87868 8.12132C4.44129 8.68393 5.20435 9 6 9V9Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M7.5 31.5C8.69347 31.5 9.83807 31.0259 10.682 30.182C11.5259 29.3381 12 28.1935 12 27C12 25.8065 11.5259 24.6619 10.682 23.818C9.83807 22.9741 8.69347 22.5 7.5 22.5C6.30653 22.5 5.16193 22.9741 4.31802 23.818C3.47411 24.6619 3 25.8065 3 27C3 28.1935 3.47411 29.3381 4.31802 30.182C5.16193 31.0259 6.30653 31.5 7.5 31.5V31.5Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M28.5 33C29.6935 33 30.8381 32.5259 31.682 31.682C32.5259 30.8381 33 29.6935 33 28.5C33 27.3065 32.5259 26.1619 31.682 25.318C30.8381 24.4741 29.6935 24 28.5 24C27.3065 24 26.1619 24.4741 25.318 25.318C24.4741 26.1619 24 27.3065 24 28.5C24 29.6935 24.4741 30.8381 25.318 31.682C26.1619 32.5259 27.3065 33 28.5 33Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -276,43 +174,96 @@ html
 								<path d="M22.5 9L21 10.5" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M25.5 25.125L21 19.5" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M10.5 23.25L13.5 20.25" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-								.columns-item__block-text Сборка базовой семантики для формирования структуры
-							.columns-item__block
-								<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+								</svg>Сборка базовой семантики для формирования структуры
+					.flex-we(class="flex-we__two")
+						.box-wrapper(class="box-wrapper--circle-right")
+							.box(class="box--left_2") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M27.5145 11.3782C28.4709 12.7483 29.1181 14.3098 29.4113 15.9548H33V20.0452H29.4113C29.1181 21.6902 28.4709 23.2517 27.5145 24.6217L30.0532 27.1605L27.1605 30.0532L24.6217 27.5145C23.2517 28.4709 21.6902 29.1181 20.0452 29.4113V33H15.9548V29.4113C14.3098 29.1181 12.7483 28.4709 11.3782 27.5145L8.8395 30.0532L5.94675 27.1605L8.4855 24.6217C7.52905 23.2517 6.88186 21.6902 6.58875 20.0452H3V15.9548H6.58875C6.88186 14.3098 7.52905 12.7483 8.4855 11.3782L5.94675 8.8395L8.8395 5.94675L11.3782 8.4855C12.7483 7.52905 14.3098 6.88186 15.9548 6.58875V3H20.0452V6.58875C21.6902 6.88186 23.2517 7.52905 24.6217 8.4855L27.1605 5.94675L30.0532 8.8395L27.5145 11.3782V11.3782Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
+								<path d="M18 21.75C18.9946 21.75 19.9484 21.3549 20.6517 20.6517C21.3549 19.9484 21.75 18.9946 21.75 18C21.75 17.0054 21.3549 16.0516 20.6517 15.3483C19.9484 14.6451 18.9946 14.25 18 14.25C17.0054 14.25 16.0516 14.6451 15.3483 15.3483C14.6451 16.0516 14.25 17.0054 14.25 18C14.25 18.9946 14.6451 19.9484 15.3483 20.6517C16.0516 21.3549 17.0054 21.75 18 21.75Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
+								</svg>Интеграция с CMS: modX, laravel
+						.box-wrapper
+							.box(class="box--center") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 9.75L3 19.074L12 27.75" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M24 9.75L33 19.074L24 27.75" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M21 3L15.75 33" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round"/>
+								</svg>Верстка макетов
+						.box-wrapper(class="box-wrapper--circle-left")
+							.box(class="box--right_2") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.25 31.5H32.25" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M8.25 20.04V25.5H13.7377L29.25 9.981L23.7712 4.5L8.25 20.04Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
-								</svg>
-								.columns-item__block-text Создание индивидуального дизайна
-							.columns-item__block
-								<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+								</svg>Создание индивидуального дизайна
+					.flex-we(class="flex-we__three")
+						.box-wrapper(class="box-wrapper--circle-right")
+							.box(class="box--left_3") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.75 18H32.25" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M21 3H15C14.6022 3 14.2206 3.15804 13.9393 3.43934C13.658 3.72064 13.5 4.10218 13.5 4.5V10.5C13.5 10.8978 13.658 11.2794 13.9393 11.5607C14.2206 11.842 14.6022 12 15 12H21C21.3978 12 21.7794 11.842 22.0607 11.5607C22.342 11.2794 22.5 10.8978 22.5 10.5V4.5C22.5 4.10218 22.342 3.72064 22.0607 3.43934C21.7794 3.15804 21.3978 3 21 3V3Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
+								<path d="M12 24H6C5.60218 24 5.22064 24.158 4.93934 24.4393C4.65804 24.7206 4.5 25.1022 4.5 25.5V31.5C4.5 31.8978 4.65804 32.2794 4.93934 32.5607C5.22064 32.842 5.60218 33 6 33H12C12.3978 33 12.7794 32.842 13.0607 32.5607C13.342 32.2794 13.5 31.8978 13.5 31.5V25.5C13.5 25.1022 13.342 24.7206 13.0607 24.4393C12.7794 24.158 12.3978 24 12 24V24Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
+								<path d="M30 24H24C23.6022 24 23.2206 24.158 22.9393 24.4393C22.658 24.7206 22.5 25.1022 22.5 25.5V31.5C22.5 31.8978 22.658 32.2794 22.9393 32.5607C23.2206 32.842 23.6022 33 24 33H30C30.3978 33 30.7794 32.842 31.0607 32.5607C31.342 32.2794 31.5 31.8978 31.5 31.5V25.5C31.5 25.1022 31.342 24.7206 31.0607 24.4393C30.7794 24.158 30.3978 24 30 24Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
+								<path d="M18 18V12" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M27 24V18" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M9 24V18" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>Построение структуры сайта
+						.box-wrapper
+							.box(class="box--center") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M31.5 13.5V30C31.5 30.3978 31.342 30.7794 31.0607 31.0607C30.7794 31.342 30.3978 31.5 30 31.5H6C5.60218 31.5 5.22064 31.342 4.93934 31.0607C4.65804 30.7794 4.5 30.3978 4.5 30V13.5" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M4.5 6C4.5 5.60218 4.65804 5.22064 4.93934 4.93934C5.22064 4.65804 5.60218 4.5 6 4.5H30C30.3978 4.5 30.7794 4.65804 31.0607 4.93934C31.342 5.22064 31.5 5.60218 31.5 6V13.5H4.5V6Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M9 10.5C9.39782 10.5 9.77936 10.342 10.0607 10.0607C10.342 9.77936 10.5 9.39782 10.5 9C10.5 8.60218 10.342 8.22064 10.0607 7.93934C9.77936 7.65804 9.39782 7.5 9 7.5C8.60218 7.5 8.22064 7.65804 7.93934 7.93934C7.65804 8.22064 7.5 8.60218 7.5 9C7.5 9.39782 7.65804 9.77936 7.93934 10.0607C8.22064 10.342 8.60218 10.5 9 10.5Z" fill="#CC9BF3"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 10.5C13.8978 10.5 14.2794 10.342 14.5607 10.0607C14.842 9.77936 15 9.39782 15 9C15 8.60218 14.842 8.22064 14.5607 7.93934C14.2794 7.65804 13.8978 7.5 13.5 7.5C13.1022 7.5 12.7206 7.65804 12.4393 7.93934C12.158 8.22064 12 8.60218 12 9C12 9.39782 12.158 9.77936 12.4393 10.0607C12.7206 10.342 13.1022 10.5 13.5 10.5Z" fill="#CC9BF3"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M18 10.5C18.3978 10.5 18.7794 10.342 19.0607 10.0607C19.342 9.77936 19.5 9.39782 19.5 9C19.5 8.60218 19.342 8.22064 19.0607 7.93934C18.7794 7.65804 18.3978 7.5 18 7.5C17.6022 7.5 17.2206 7.65804 16.9393 7.93934C16.658 8.22064 16.5 8.60218 16.5 9C16.5 9.39782 16.658 9.77936 16.9393 10.0607C17.2206 10.342 17.6022 10.5 18 10.5Z" fill="#CC9BF3"/>
+								</svg>Синхронизации с системами учета/доставки*
+						.box-wrapper(class="box-wrapper--circle-left")
+							.box(class="box--right_3") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M14.25 24C8.451 24 3.75 19.299 3.75 13.5C3.75 7.701 8.451 3 14.25 3C20.049 3 24.75 7.701 24.75 13.5" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
 								<path d="M13.5 13.5H33V33H13.5V13.5Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
-								</svg>
-								.columns-item__block-text Наполнение
-							.columns-item__block
-								<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+								</svg>Наполнение
+					.flex-we(class="flex-we__four")
+						.box-wrapper(class="box-wrapper--circle-top")
+							.box(class="box--right_5") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M18 33C19.9702 33.0026 21.9215 32.6157 23.7417 31.8618C25.5619 31.1078 27.2152 30.0015 28.6065 28.6065C30.0015 27.2152 31.1078 25.5619 31.8618 23.7417C32.6157 21.9215 33.0026 19.9702 33 18C33.0025 16.0298 32.6157 14.0785 31.8617 12.2583C31.1077 10.4381 30.0015 8.78484 28.6065 7.39351C27.2152 5.99853 25.5619 4.89226 23.7417 4.13828C21.9215 3.38429 19.9702 2.99746 18 3.00001C16.0298 2.9975 14.0785 3.38435 12.2583 4.13833C10.4381 4.89232 8.78484 5.99857 7.39351 7.39351C5.99857 8.78484 4.89232 10.4381 4.13833 12.2583C3.38435 14.0785 2.9975 16.0298 3.00001 18C2.99746 19.9702 3.38429 21.9215 4.13828 23.7417C4.89226 25.5619 5.99853 27.2152 7.39351 28.6065C8.78484 30.0015 10.4381 31.1077 12.2583 31.8617C14.0785 32.6157 16.0298 33.0025 18 33V33Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
 								<path d="M12 18L16.5 22.5L25.5 13.5" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-								.columns-item__block-text Сдача проекта
+								</svg>Сдача проекта
 			section.form 
 				h2.dop-title Как узнать сколько будет стоить сайт?
 				p Расчет стоимости всегда индивидуален и зависит от ваших задач и ТЗ.<br> Пришлите нам ваше ТЗ и мы в течение 2 рабочих дней предоставим вам расчет
-				form(action="#" method="post")
+				form(action="#" method="post" id="form" class="form_box")
 					.inputs-left
 						.input_block
-							input(type="text" name="name" id="name_input")
-							label(for="name_input")
+							input(type="text" name="name" id="name_input" class="rfield" required)
+							span.error Это поле обязательное для заполнения 
+							label.dop-input(for="name_input")
 								span ФИО
 						.input_block
-							input(type="text" name="phone" id="phone_input")
-							label(for="phone_input")
+							input(type="text" name="phone" id="phone_input" class="rfield" required)
+							span.error Это поле обязательное для заполнения
+							label.dop-input(for="phone_input")
 								span Номер
-						button.btn(type="submit") Написать нам
+						.input__wrapper
+							input.input(name="file" type="file" id="input__file" class="input__file" multiple)
+							label.input__file-button(for="input__file")
+								span.input__file-icon-wrapper
+									img.input__file-icon(src=img+"upload.svg", alt="Выбрать файл")
+								span.input__file-button-text Выберите файл
+						button.btn(type="submit" id="button") Написать нам
 					.textarea_block
 						textarea(name="message" id="message_input") 
 						label(for="message_input")
 							span Описание задачи
+			svg(width="0" height="0" class="hidden")
+				
+				<symbol width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="date">
+					<path d="M2.5 9.5H21.5V20C21.5 20.2652 21.3946 20.5196 21.2071 20.7071C21.0196 20.8946 20.7652 21 20.5 21H3.5C3.23478 21 2.98043 20.8946 2.79289 20.7071C2.60536 20.5196 2.5 20.2652 2.5 20V9.5Z" stroke="#37474F" stroke-linejoin="round"/>
+					<path d="M2.5 4.5C2.5 4.23478 2.60536 3.98043 2.79289 3.79289C2.98043 3.60536 3.23478 3.5 3.5 3.5H20.5C20.7652 3.5 21.0196 3.60536 21.2071 3.79289C21.3946 3.98043 21.5 4.23478 21.5 4.5V9.5H2.5V4.5Z" stroke="#37474F" stroke-linejoin="round"/>
+					<path d="M8 2V6" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M16 2V6" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M14 17H17" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M7 17H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M14 13H17" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M7 13H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
+				</symbol>
+				<symbol width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="money">
+					<path d="M12 1V23" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M17.5 3H10C8.80653 3 7.66193 3.47411 6.81802 4.31802C5.97411 5.16193 5.5 6.30653 5.5 7.5C5.5 8.69347 5.97411 9.83807 6.81802 10.682C7.66193 11.5259 8.80653 12 10 12" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M6.5 21H14C14.5909 21 15.1761 20.8836 15.7221 20.6575C16.268 20.4313 16.7641 20.0998 17.182 19.682C17.5998 19.2641 17.9313 18.768 18.1575 18.2221C18.3836 17.6761 18.5 17.0909 18.5 16.5C18.5 15.9091 18.3836 15.3239 18.1575 14.7779C17.9313 14.232 17.5998 13.7359 17.182 13.318C16.7641 12.9002 16.268 12.5687 15.7221 12.3425C15.1761 12.1164 14.5909 12 14 12H10" stroke="#37474F" stroke-linecap="round" stroke-linejoin="round"/>
+				</symbol>
 		include blocks/footer.pug
 		include blocks/scripts.pug

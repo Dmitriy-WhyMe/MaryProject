@@ -9,13 +9,27 @@ html
 		main.page-container
 			include blocks/navigation-home.pug
 			include blocks/arrow-home.pug
-			section.main-slider 
+			section.main-slider
+				
 				.main-slider__text 
 					h1.main-title Мы мастера WEB-а
 					p.text Мы знаем, что делаем и делаем то, что знаем.<br> Мы нацелены на результат, а не на “сдачу”прокта.
-					a.btn(href="#") Написать нам
-				.background-slider 
+					a.btn(href="#text-popup" class="popup-content") Написать нам
+					
+				.slider-bg 
 					img(src=img+"texture.svg", alt="")
+				 
+				.swiper-container(class="mySwiper-1")
+					.swiper-wrapper
+						.swiper-slide
+							span 01
+							img(src=img+"slide.png", alt="")
+							h4 SEO
+						.swiper-slide
+							span 02
+							img(src=img+"slide.png", alt="")
+							h4 Сайты
+					
 			section.doing-reviews
 				.doing 
 					img(src=img+"shutterstock_2058293555.png", alt="")
@@ -25,7 +39,7 @@ html
 				.reviews
 					.reviews__header 
 						h2.dop-title Отзывы
-						a(href="#") Все отзывы <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12.5H19" stroke="#A755ED" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 19.5L19 12.5L12 5.5" stroke="#A755ED" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						a(href="#") Все отзывы <svg width="24" height="25"><use xlink:href="#arrow"></use></svg>
 					.reviews__body
 						.reviews__body-item 
 							img(src=img+"unsplash_qfp4-Ud6Fyg.png", alt="")
@@ -39,8 +53,10 @@ html
 									li SEO
 									li Техподдержка
 								a(href="#") Подробнее
-						.reviews__body-item 
-							img(src=img+"unsplash_qfp4-Ud6Fyg (1).png", alt="")
+						.reviews__body-item
+							.reviews__body-video
+								img(src=img+"unsplash_qfp4-Ud6Fyg (1).png", alt="")
+								a(href="#video-popup" class="popup-content_1") <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V20L18 10.0341L0 0Z" fill="white"/></svg>
 							.reviews__text 
 								.reviews__date 26 янв 2018
 								.reviews__name Иннокентий Длиннофамильный
@@ -52,6 +68,11 @@ html
 									li Техподдержка
 								a(href="#") Подробнее
 
-
+			svg(width="0" height="0" class="hidden")
+				
+				<symbol width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow">
+					<path d="M5 12.5H19" stroke="#A755ED" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M12 19.5L19 12.5L12 5.5" stroke="#A755ED" stroke-linecap="round" stroke-linejoin="round"/>
+				</symbol>
 		include blocks/footer.pug
 		include blocks/scripts.pug
