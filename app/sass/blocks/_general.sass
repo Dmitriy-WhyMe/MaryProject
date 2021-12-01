@@ -59,6 +59,8 @@ div
 	border-radius: 16px
 	width: 180px
 	height: 56px
+.flex
+	display: flex
 //start main-slider 
 .main-slider 
 	position: relative
@@ -168,4 +170,713 @@ div
 			svg
 				margin-left: 10px
 //end doing-reviews 
+//start main-screen
+.main-screen__one
+	margin-top: 177px
+	img
+		margin-left: 100px
+	.main-screen__text 
+		max-width: 570px
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		h1
+			text-align: end
+			margin-bottom: 30px
+		p
+			text-align: end
+			margin-bottom: 30px
+		a
+.main-screen__one > .container
+	display: flex
+	justify-content: space-between
+.main-screen__two
+	margin-top: 180px
+	.main-screen__two-text
+		h2
+			margin-bottom: 32px
+.main-screen__two > .container
+	display: flex
+	justify-content: space-between
+	align-items: center
+//end main-screen
+//start site-slider
+.already-done
+	margin-top: 140px
+	margin-bottom: 140px
+	.dop-title
+		margin-left: 85px
+		margin-bottom: 30px
+.swiper-slide
+	display: flex
+	flex-direction: column
+	gap: 20px
+	padding: 20px
+	min-width: 370px
+	width: 100%
+	box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.15)
+	border-radius: 10px
+	.already-done__link
+		font-size: 18px
+		line-height: 150%
+		color: $primary
+	.already-done__text
+		font-weight: bold
+		font-size: 24px
+		line-height: 110%
+		color: $text
+	h5
+		font-weight: bold
+		font-size: 20px
+		line-height: 110%
+		color: $text
+	ul
+		li
+			list-style-type: disc
+			font-size: 16px
+			line-height: 150%
+			color: $dark-grey
+			margin-left: 20px
+	.more
+		border-bottom: 1px dashed
+		font-size: 18px
+		line-height: 150%
+		color: $dark-grey
+		max-width: 89px
+		width: 100%
+	.already-done__block 
+		display: flex
+		align-items: center
+		gap: 40px
+		.already-done__block-item
+			display: flex
+			align-items: center
+			svg
+				margin-right: 7.5px
+			.already-done__block-text 
+				display: flex
+				flex-direction: column
+				gap: 5px
+				font-size: 14px
+				line-height: 150%
+				color: $gray
+				.trafic
+					font-weight: bold
+					font-size: 20px
+					line-height: 110%
+					color: $primary
+				.bold
+					font-weight: bold
+					font-size: 20px
+					line-height: 110%
+					color: $text
+.mySwiper 
+	padding-left: 85px
+//end site-slider
+//start we-work
+.we-work
+	padding-bottom: 70px
+	position: relative
+	.we-work__background
+		position: absolute
+		background: linear-gradient(226.79deg, #C1D5D9 0%, #EFE8DB 100%)
+		max-width: 855px
+		width: 100%
+		height: 710px
+		border-radius: 24px 0px 0px 24px
+		transform: matrix(-1, 0, 0, 1, 0, 0)
+	.we-work__columns
+		margin-top: 30px
+		display: flex
+		gap: 5px
+		filter: drop-shadow(0px 20px 80px rgba(0, 0, 0, 0.15))
+.we-work > .container
+	padding-top: 70px
+.columns-item__block
+	position: relative
+	display: flex
+	align-items: center
+	height: 118px
+	max-width: 420px
+	width: 100%
+	background: #FFFFFF
+	border-radius: 20px
+	padding-left: 30px
+	padding-right: 30px
+	padding-top: 20px
+	padding-bottom: 20px
+	margin-bottom: 5px
+	a
+		margin-top: 5px
+		font-size: 18px
+		line-height: 150%
+		color: $dark-grey
+		border-bottom: 1px dashed #37474F
+	.columns-item__block-text
+		font-weight: bold
+		font-size: 20px
+		color: $text
+		line-height: 110%
+	svg
+		margin-right: 25px
+.column-one > .columns-item__block	
+	//background: radial-gradient(circle closest-side at 100.3% 59px, rgba(0,0,0,0) 25px, #fff 26px, #fff 25px)
+.column-two > .columns-item__block
+	position: relative
+	//background: radial-gradient(circle closest-side at -0.7% 59px, rgba(0,0,0,0) 25px, #fff 26px, #fff 25px)
+.column-one > .columns-item__block:after
+	right: -20px
+	content: ''
+	width: 38px
+	height: 38px
+	border-radius: 100%
+	position: absolute
+	background: #CC9BF3
+	box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.2), inset -5px -5px 5px rgba(0, 0, 0, 0.1)
+.column-two
+	z-index: 2
+.column-one
+	z-index: 3
+.column-three
+	z-index: 1
+//end we-work
+//start form
+form
+	display: flex
+	justify-content: center
+	gap: 70px
+.form 
+	padding-top: 140px
+	padding-bottom: 140px
+	h2
+		text-align: center
+		margin-bottom: 30px
+	p
+		max-width: 693px
+		width: 100%
+		text-align: center
+		margin: 0 auto
+		margin-bottom: 60px
+	.inputs-left
+		display: flex
+		flex-direction: column
+		gap: 30px
+.textarea_block
+	max-width: 430px
+	width: 100%
+	position: relative
+	height: 287px
+.textarea_block textarea
+	display: block
+	padding: 0
+	width: 430px
+	height: 287px
+	border: none
+	border: 1px solid #B0BEC5
+	border-radius: 10px
+	background: none
+	font-size: 24px
+	resize: none
+	outline: none
+	margin: 0px
+	font-size: 18px
+	line-height: 150%
+	color: $text
+	padding-left: 20px
+	padding-right: 20px
+	padding-bottom: 15px
+	padding-top: 15px
+.textarea_block label
+	display: block
+	width: 430px
+	height: 287px
+	position: absolute
+	top: 0
+	left: 20px
+	cursor: text
+.textarea_block label span
+	display: block
+	height: 24px
+	-webkit-transition: all 0.3s ease
+	-moz-transition: all 0.3s ease
+	-o-transition: all 0.3s ease
+	-ms-transition: all 0.3s ease
+	transition: all 0.3s ease
+	font-size: 18px
+	line-height: 150%
+	color: $text
+	position: absolute
+	top: 15px
+	left: 0
+	cursor: text
+.textarea_block textarea:focus+label span
+	font-weight: bold
+	font-size: 14px
+	line-height: 150%
+	color: $primary
+	top: 2px
+.textarea_block+label span
+	font-weight: bold
+	font-size: 14px
+	line-height: 150%
+	color: $primary
+	top: 2px
+.input_block
+	max-width: 430px
+	height: 57px
+	position: relative
+.input_block input[type="text"]
+	font-size: 18px
+	line-height: 150%
+	color: $text
+	padding-left: 20px
+.input_block input
+	display: block
+	padding: 0
+	width: 430px
+	height: 57px
+	border: none
+	border: 1px solid #B0BEC5
+	border-radius: 10px
+	background: none
+	font-size: 24px
+	color: #000
+	outline: none
+.input_block label
+	display: block
+	width: 430px
+	height: 57px
+	position: absolute
+	top: 0
+	left: 20px
+	cursor: text
+.input_block label span
+	display: block
+	height: 24px
+	-webkit-transition: all 0.3s ease
+	-moz-transition: all 0.3s ease
+	-o-transition: all 0.3s ease
+	-ms-transition: all 0.3s ease
+	transition: all 0.3s ease
+	font-size: 18px
+	line-height: 150%
+	color: $text
+	position: absolute
+	top: 15px
+	left: 0
+	cursor: text
+.input_block input:focus+label span
+	font-weight: bold
+	font-size: 14px
+	line-height: 150%
+	color: $primary
+	top: 2px
+.has_value+label span
+	font-weight: bold
+	font-size: 14px
+	line-height: 150%
+	color: $primary
+	top: 2px
+//end form
+//start how-much
+.how-much
+	margin-top: 140px
+	margin-bottom: 140px
+	h2
+		margin-bottom: 20px
+	.how-much__text
+		font-size: 24px
+		line-height: 150%
+		color: $text
+		margin-bottom: 40px
+	.how-much__block-grey
+		display: flex
+		gap: 35px
+		.how-much__block-item
+			background: #F5F7F8
+			border-radius: 15px
+			max-width: 400px
+			width: 100%
+			height: 172px
+			padding: 20px
+			h4
+				font-weight: bold
+				font-size: 24px
+				line-height: 110%
+				color: $text
+				margin-bottom: 20px
+			.how-much__block-dop
+				display: flex
+				align-items: center
+				margin-bottom: 20px
+				svg
+					margin-right: 15px
+				p
+					font-size: 18px
+					line-height: 150%
+					color: $text
+	.how-much__block-white
+		display: flex
+		gap: 35px
+		margin-bottom: 35px
+		.how-much__block-item
+			box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.15)
+			border-radius: 10px
+			max-width: 400px
+			width: 100%
+			height: 172px
+			padding: 20px
+			h4
+				font-weight: bold
+				font-size: 24px
+				line-height: 110%
+				color: $text
+				margin-bottom: 20px
+			.how-much__block-time
+				margin-bottom: 20px
+				display: flex
+				align-items: center
+				svg
+					margin-right: 11px
+				p
+					font-weight: bold
+					font-size: 36px
+					line-height: 110%
+					color: $text
+			.how-much__block-price
+				display: flex
+				align-items: center
+				svg
+					margin-right: 15px
+				p
+					font-weight: bold
+					font-size: 24px
+					line-height: 110%
+					color: $primary
+//end how-much
+//start main-seo-two
+.main-seo-two
+	padding-left: 200px
+	padding-top: 120px
+	margin-bottom: 140px
+	display: flex
+	justify-content: space-between
+	.main-seo-two__item
+		h1
+			margin-top: 162px
+			margin-bottom: 30px
+		.link-main
+			font-size: 18px
+			line-height: 150%
+			margin-bottom: 30px
+			color: $primary
+		.main-seo-two__item-row
+			display: flex
+			.main-seo-two__item-cart
+				display: flex
+				align-items: center
+				svg
+					margin-right: 8px
+				.main-seo-two__item-text
+					margin-bottom: 10px
+					width: 251px
+					.sub-title
+						font-size: 14px
+						margin-bottom: 5px
+						color: $gray
+						line-height: 150%
+					.title
+						font-weight: bold
+						color: $text
+						font-size: 20px
+						line-height: 110%
+		position: relative
+		img
+			position: relative
+		.button
+			position: absolute
+			left: 10px
+			top: 10px
+			display: flex
+			align-items: center
+			justify-content: center
+			background: #FFFFFF
+			box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
+			border-radius: 15px
+			width: 60px
+			height: 60px
+//end main-seo-two
+//start text-block 
+.text-block 
+	.text-block__enter
+		margin-bottom: 140px
+		h2
+			margin-bottom: 30px
+	.text-block__plan > .container
+		
+		position: absolute
+		top: 100px
+		left: 85px
+		h2
+			margin-bottom: 30px
+		ul
+			max-width: 960px
+			width: 100%
+			li
+				padding-left: 40px
+				margin-bottom: 30px
+				font-size: 18px
+				line-height: 150%
+				color: $dark-grey
+				position: relative
+			li:before
+				left: 0px
+				position: absolute
+				content: ''
+				width: 20px
+				height: 20px
+				border: 3px solid $primary
+				border-radius: 100%
+				
+	.text-block__plan 
+		margin-bottom: 140px
+		background: linear-gradient(226.79deg, #C1D5D9 0%, #EFE8DB 100%)
+		position: relative
+		max-width: 1155px
+		width: 100%
+		height: 688px
+		border-radius: 24px 0px 0px 24px
+.text-block__Introduction
+	margin-bottom: 60px
+	h2
+		margin-bottom: 30px
+	.flex
+		flex-direction: column
+		gap: 60px
+		img
+			margin: 0 auto
+//end text-block 
+//start customer-testimonial
+.customer-testimonial
+	margin-bottom: 140px
+	.container
+		h2
+			margin-bottom: 30px
+		.flex
+			gap: 100px
+			align-items: center
+			img
+				max-width: 670px
+				width: 100%
+			h3
+				font-weight: bold
+				font-size: 36px
+				line-height: 110%
+				color: $text
+				margin-bottom: 20px
+			.text
+				max-width: 396px
+//end customer-testimonial
+//start .what-came
+.what-came
+	margin-bottom: 140px
+	h2
+		margin-bottom: 30px
+	.what-came__interested
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 40px
+		box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.15)
+		border-radius: 15px
+		h3
+			font-weight: bold
+			font-size: 36px
+			line-height: 110%
+			color: $text
+			margin-bottom: 10px
+	.what-came__row 
+		margin-bottom: 60px
+		display: flex
+		gap: 35px
+		.what-came__item 
+			max-width: 400px
+			width: 100%
+			height: 117px
+			box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.15)
+			border-radius: 10px
+			display: flex
+			align-items: center
+			padding: 20px
+			svg
+				margin-right: 22px
+			.what-came__item-text 
+				h3
+					margin-bottom: 10px
+					font-weight: bold
+					font-size: 36px
+					line-height: 110%
+					color: $text
+//end .what-came
+//start .text-page
+.text-page > .container
+	padding-bottom: 140px
+	padding-left: 100px
+	padding-top: 282px
+	display: flex
+	flex-direction: column
+	gap: 60px
+	.text-page__media 
+		display: flex
+		gap: 37px
+		align-items: center
+		p
+			font-size: 18px
+			line-height: 150%
+			color: $dark-grey
+		.flex
+			gap: 20px
+	.text-page__testimodals
+		background: #F5F7F8
+		border-radius: 20px
+		padding: 40px
+		svg
+			max-width: 60px
+			margin-right: 70px
+		.text-page__testimodals-text
+			h3
+				font-weight: bold
+				color: $text
+				font-size: 18px
+				line-height: 150%
+				margin-bottom: 20px
+			p
+				font-weight: bold
+				font-size: 16px
+				color: $gray
+				line-height: 150%
+	.text-page__list-number
+		ul
+			display: flex
+			flex-direction: column
+			gap: 20px
+			li
+				font-size: 18px
+				line-height: 150%
+				color: $dark-grey
+				padding-left: 30px
+				list-style: auto
+				margin-left: 60px
+	.text-page__list-square
+		ul
+			display: flex
+			flex-direction: column
+			gap: 20px
+			li
+				font-size: 18px
+				line-height: 150%
+				color: $dark-grey
+				position: relative
+				padding-left: 90px
+			li:before
+				content: ''
+				position: absolute
+				border: 3px solid #A755ED
+				width: 16px
+				height: 16px
+				left: 40px
+	.text-page__images 
+		display: flex
+		gap: 30px
+	.text-page__img-one, .text-page__img-two, .text-page__img-three
+		max-width: 600px
+		width: 100%
+		height: 578px
+		margin: 0 auto
+	.text-page__table 
+		table
+			border-collapse: collapse
+			width: 100%
+			thead
+				tr
+					background: #F9FBFC
+					height: 60px
+					td
+						font-weight: bold
+						font-size: 14px
+						line-height: 150%
+						color: $gray
+						padding-left: 10px
+					td:first-child
+						padding-left: 20px
+					
+			tbody
+				tr
+					height: 60px
+					td
+						padding-left: 10px
+					td:first-child
+						padding-left: 20px
+				tr:nth-child(2n)
+					background: #F9FBFC
+				tr:nth-child(odd)
+					background: #F5F7F8
 
+	.text-page__text
+		h1
+			margin-bottom: 30px
+//end .text-page
+//start .contact
+.contact 
+	padding-top: 120px
+	padding-left: 185px
+	padding-bottom: 80px
+	display: flex
+	justify-content: space-between
+	.contact__text 
+		margin-top: 162px
+		h1
+			margin-bottom: 30px
+		.bold
+			font-weight: bold
+			color: $dark-grey
+			font-size: 20px
+			line-height: 110%
+			margin-bottom: 20px
+		.phone
+			margin-bottom: 30px
+			display: flex
+			align-items: center
+			img
+				margin-right: 13px
+			.phone__text
+				font-weight: bold
+				color: $dark-grey
+				font-size: 20px
+				line-height: 110%
+		
+		.text, .mail
+			display: flex
+			align-items: center
+			margin-bottom: 30px
+			font-size: 18px
+			line-height: 150%
+			color: $dark-grey
+			svg
+				margin-right: 13px
+		.contact__media 
+			margin-bottom: 30px
+			display: flex
+			gap: 20px
+	.contact__map
+		position: relative
+		svg
+			position: absolute 
+			z-index: 10
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			display: flex
+			margin: auto auto
+//end .contact 
