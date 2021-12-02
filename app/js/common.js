@@ -11,8 +11,22 @@
 			loop: false,
 			slidesPerView: 'auto',
 			centeredSlides: true,
-			spaceBetween: 170,
 			grabCursor: true,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			breakpoints: {
+				// when window width is <= 499px
+				499: {
+					slidesPerView: 1,
+					spaceBetweenSlides: 30
+				},
+				// when window width is <= 999px
+				1441: {
+					
+				}
+			}
 		});
 		//MENU
 		$('.nav-arrow').click(function(){
