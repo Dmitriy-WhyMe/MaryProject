@@ -7,12 +7,12 @@ html
 	body
 		include blocks/header.pug
 		
-		main.page-container
+		main.page-container(class="seo-one")
 			include blocks/navigation-home.pug
 			include blocks/arrow-site.pug
 			section.main-screen__one
 				.container
-					img(src=img+"shutterstock_1951507267 1 копия 3.png", alt="")
+					img(src=img+"shutterstock_1951507267 1 копия 3.png", alt="", loading="lazy")
 					.main-screen__text 
 						h1.main-title SEO-оптимизация сайтов
 						p.text SEO-оптимизация - это технические и контентные работы по сайту. Мы технически приводим сайт в соотвествии к официально заявленным требованиям поисковых систем.Анализируем семантику и приводим контент к тому виду в котором его запрашивают ваши клиентв. Повышаем удобство пользования сайтом. Анализируем и внедряем коммерческие факторы
@@ -22,7 +22,7 @@ html
 					.main-screen__two-text 
 						h2.dop-title Делаем свою работу
 						p.text SEO-оптимизация - это работа команды тех специалистов под управлением seo-аналитика. 
-					img(src=img+"seo 1.png", alt="")
+					img(src=img+"seo 1.png", alt="", loading="lazy")
 
 			section.already-done
 				h2.dop-title Как мы работаем. Истории наших клиентов
@@ -30,7 +30,7 @@ html
 					.swiper-wrapper
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 1.png", alt="")
+								img(src=img+"Behance-Logo 1.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -54,7 +54,7 @@ html
 							a.more(href="#") Подробнее
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 2.png", alt="")
+								img(src=img+"Behance-Logo 2.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -78,7 +78,7 @@ html
 							a.more(href="#") Подробнее
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 1.png", alt="")
+								img(src=img+"Behance-Logo 1.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -102,7 +102,7 @@ html
 							a.more(href="#") Подробнее
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 2.png", alt="")
+								img(src=img+"Behance-Logo 2.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -126,7 +126,7 @@ html
 							a.more(href="#") Подробнее
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 2.png", alt="")
+								img(src=img+"Behance-Logo 2.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -183,7 +183,7 @@ html
 								<path d="M33 33C33 28.8578 29.6422 25.5 25.5 25.5C21.3578 25.5 18 28.8578 18 33" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M25.5 18C25.5 13.8578 22.1422 10.5 18 10.5C13.8578 10.5 10.5 13.8578 10.5 18" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 								</svg> Анализ конкурентов
-						.box-wrapper
+						.box-wrapper(class="box-wrapper--circle-bot")
 							.box(class="box--center") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M21.75 3H6.75C6.35218 3 5.97064 3.15804 5.68934 3.43934C5.40804 3.72064 5.25 4.10218 5.25 4.5V31.5C5.25 31.8978 5.40804 32.2794 5.68934 32.5607C5.97064 32.842 6.35218 33 6.75 33H27.75C28.1478 33 28.5294 32.842 28.8107 32.5607C29.092 32.2794 29.25 31.8978 29.25 31.5V15.0037" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M9.75 13.5H15.75" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round"/>
@@ -296,7 +296,8 @@ html
 						a(href="#") Все отзывы <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12.5H19" stroke="#A755ED" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 19.5L19 12.5L12 5.5" stroke="#A755ED" stroke-linecap="round" stroke-linejoin="round"/></svg>
 					.reviews__body
 						.reviews__body-item 
-							img(src=img+"unsplash_qfp4-Ud6Fyg.png", alt="")
+							img.mobile(src=img+"unsplash_qfp4-Ud6Fyg-mobile.png", alt="", loading="lazy")
+							img(src=img+"unsplash_qfp4-Ud6Fyg.png", alt="", loading="lazy")
 							.reviews__text 
 								.reviews__date 26 янв 2018
 								.reviews__name Иннокентий Длиннофамильный
@@ -308,7 +309,8 @@ html
 									li Техподдержка
 								a(href="#") Подробнее
 						.reviews__body-item 
-							img(src=img+"unsplash_qfp4-Ud6Fyg (1).png", alt="")
+							img.mobile(src=img+"unsplash_qfp4-Ud6Fyg-mob.png", alt="", loading="lazy")
+							img(src=img+"unsplash_qfp4-Ud6Fyg (1).png", alt="", loading="lazy")
 							.reviews__text 
 								.reviews__date 26 янв 2018
 								.reviews__name Иннокентий Длиннофамильный

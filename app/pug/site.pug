@@ -6,12 +6,12 @@ html
 		title
 	body
 		include blocks/header.pug
-		main.page-container
+		main.page-container(class="site-page")
 			include blocks/navigation-home.pug
 			include blocks/arrow-site.pug
 			section.main-screen__one
 				.container
-					img(src=img+"shutterstock_1988721584 1 копия 2.png", alt="")
+					img(src=img+"shutterstock_1988721584 1 копия 2.png", alt="", loading="lazy")
 					.main-screen__text 
 						h1.main-title Разработка сайтов для бизнеса
 						p.text Сайт - это часть экосистемы бизнеса.<br> Выявляем задачи и потребности бизнеса<br>Разрабатываем сайты с учетом специфифики клиента<br> Анализируем отрасль
@@ -29,7 +29,7 @@ html
 					.swiper-wrapper
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 1.png", alt="")
+								img(src=img+"Behance-Logo 1.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -52,7 +52,7 @@ html
 							a.more(href="#") Подробнее
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 2.png", alt="")
+								img(src=img+"Behance-Logo 2.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -75,7 +75,7 @@ html
 							a.more(href="#") Подробнее
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 1.png", alt="")
+								img(src=img+"Behance-Logo 1.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -98,7 +98,7 @@ html
 							a.more(href="#") Подробнее
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 2.png", alt="")
+								img(src=img+"Behance-Logo 2.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -121,7 +121,7 @@ html
 							a.more(href="#") Подробнее
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 2.png", alt="")
+								img(src=img+"Behance-Logo 2.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -144,7 +144,7 @@ html
 							a.more(href="#") Подробнее
 			section.we-work
 				.we-work__background 
-					img(src=img+"texture_1.svg", alt="")
+					img(src=img+"texture_1.svg", alt="", loading="lazy")
 				.container 
 					h2.dop-title Как мы работаем?
 					.flex-we(class="flex-we__one")
@@ -181,8 +181,8 @@ html
 								<path d="M27.5145 11.3782C28.4709 12.7483 29.1181 14.3098 29.4113 15.9548H33V20.0452H29.4113C29.1181 21.6902 28.4709 23.2517 27.5145 24.6217L30.0532 27.1605L27.1605 30.0532L24.6217 27.5145C23.2517 28.4709 21.6902 29.1181 20.0452 29.4113V33H15.9548V29.4113C14.3098 29.1181 12.7483 28.4709 11.3782 27.5145L8.8395 30.0532L5.94675 27.1605L8.4855 24.6217C7.52905 23.2517 6.88186 21.6902 6.58875 20.0452H3V15.9548H6.58875C6.88186 14.3098 7.52905 12.7483 8.4855 11.3782L5.94675 8.8395L8.8395 5.94675L11.3782 8.4855C12.7483 7.52905 14.3098 6.88186 15.9548 6.58875V3H20.0452V6.58875C21.6902 6.88186 23.2517 7.52905 24.6217 8.4855L27.1605 5.94675L30.0532 8.8395L27.5145 11.3782V11.3782Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
 								<path d="M18 21.75C18.9946 21.75 19.9484 21.3549 20.6517 20.6517C21.3549 19.9484 21.75 18.9946 21.75 18C21.75 17.0054 21.3549 16.0516 20.6517 15.3483C19.9484 14.6451 18.9946 14.25 18 14.25C17.0054 14.25 16.0516 14.6451 15.3483 15.3483C14.6451 16.0516 14.25 17.0054 14.25 18C14.25 18.9946 14.6451 19.9484 15.3483 20.6517C16.0516 21.3549 17.0054 21.75 18 21.75Z" stroke="#CC9BF3" stroke-width="1.5" stroke-linejoin="round"/>
 								</svg>Интеграция с CMS: modX, laravel
-						.box-wrapper
-							.box(class="box--center") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+						.box-wrapper(class="box-wrapper--circle-bottom")
+							.box(class="box--center box--center-2") <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M12 9.75L3 19.074L12 27.75" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M24 9.75L33 19.074L24 27.75" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M21 3L15.75 33" stroke="#CC9BF3" stroke-width="1.5" stroke-linecap="round"/>

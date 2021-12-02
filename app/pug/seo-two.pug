@@ -7,7 +7,7 @@ html
 	body
 		include blocks/header.pug
 		
-		main.page-container
+		main.page-container(class="seo-two")
 			include blocks/navigation-home.pug
 			include blocks/arrow-seo-two.pug
 			section.main-seo-two 
@@ -36,8 +36,8 @@ html
 							.main-seo-two__item-text
 								p.sub-title В месяц
 								p.title 50 000 рублей
-				.main-seo-two__item 
-					img(src=img+"unsplash_EJHiB8oRzYc.png", alt="")
+				.main-seo-two__item(class="img-absol")
+					img(src=img+"unsplash_EJHiB8oRzYc.png", alt="", loading="lazy")
 					a.button(href="#") 
 						<svg width="32" height="32"><use xlink:href="#ico4"></use></svg>
 			section.text-block
@@ -71,7 +71,7 @@ html
 					h2.dop-title Отзыв клиента
 					.flex
 						.customer-testimonial__video
-							img(src=img+"unsplash_qfp4-Ud6Fyg_1.png", alt="")
+							img(src=img+"unsplash_qfp4-Ud6Fyg_1.png", alt="", loading="lazy")
 							a(href="#video-popup-2" class="popup-content_2") <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V20L18 10.0341L0 0Z" fill="white"/></svg>
 						.customer-testimonial__text 
 							h3 Иннокентий Длиннофамильный
@@ -106,7 +106,7 @@ html
 					.swiper-wrapper
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 1.png", alt="")
+								img(src=img+"Behance-Logo 1.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -130,7 +130,7 @@ html
 							a.more(href="#") Подробнее
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 2.png", alt="")
+								img(src=img+"Behance-Logo 2.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -154,7 +154,7 @@ html
 							a.more(href="#") Подробнее
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 1.png", alt="")
+								img(src=img+"Behance-Logo 1.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -178,7 +178,7 @@ html
 							a.more(href="#") Подробнее
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 2.png", alt="")
+								img(src=img+"Behance-Logo 2.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
@@ -202,7 +202,7 @@ html
 							a.more(href="#") Подробнее
 						.swiper-slide 
 							.already-done__logo 
-								img(src=img+"Behance-Logo 2.png", alt="")
+								img(src=img+"Behance-Logo 2.png", alt="", loading="lazy")
 							a.already-done__link(href="#") behance.com
 							.already-done__text Всемирное сообщество фотографов, дизайнеров и иллюстраторов
 							p.text Интернет-магазин по продаже пирогов
